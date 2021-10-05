@@ -2,6 +2,7 @@ package com.upgrading.upgradingpertama;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -29,9 +30,9 @@ public class MainActivity extends AppCompatActivity {
                 password = txt_password.getText().toString();
 
                 if (username.equals("admin") && password.equals("qwerty")) {
-                    Toast.makeText(MainActivity.this, "Hai, Admin!", Toast.LENGTH_SHORT).show();
-                } else if (username.equals("user") && password.equals("password")) {
-                    Toast.makeText(MainActivity.this, "Hai, User!", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(getApplicationContext(), CalculatorActivity.class);
+                    startActivity(intent);
+                    finish();
                 } else {
                     Toast.makeText(MainActivity.this, "Login gagal", Toast.LENGTH_SHORT).show();
                 }
