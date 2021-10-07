@@ -18,25 +18,35 @@
             android:text="Kalkulator"
             android:textSize="32sp"
             android:textStyle="bold"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"/>
 
-        <EditText
-            android:id="@+id/txt_firstNumber_calculator"
-            android:layout_marginTop="30dp"
-            android:layout_marginHorizontal="10dp"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Angka Pertama"
-            android:inputType="number"/>
+            android:layout_marginHorizontal="10dp">
 
-        <EditText
-            android:id="@+id/txt_secondNumber_calculator"
-            android:layout_marginTop="5dp"
-            android:layout_marginHorizontal="10dp"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_firstNumber_calculator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Angka Kedua"
-            android:inputType="number"/>
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_secondNumber_calculator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
             android:layout_width="wrap_content"
@@ -44,21 +54,20 @@
             android:text="Hasil"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="10dp"
-            android:textSize="18sp"/>
+            android:textSize="16sp"/>
 
         <TextView
             android:id="@+id/tv_result_calculator"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="20dp"
             android:layout_marginLeft="10dp"
-            android:textSize="24sp"/>
+            android:textSize="24sp" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
             android:orientation="horizontal">
 
             <Button

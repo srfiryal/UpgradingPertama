@@ -9,8 +9,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.textfield.TextInputEditText;
+
 public class CalculatorActivity extends AppCompatActivity {
-    EditText txt_firstNumber, txt_secondNumber;
+    TextInputEditText txt_firstNumber, txt_secondNumber;
     Button btn_add, btn_subtract, btn_multiply, btn_divide;
     TextView tv_result;
     double firstNumber, secondNumber, result;
